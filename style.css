@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "DM Sans";
+    src: url(./fonts/DM_Sans/static/DMSans-Light.ttf);
+ }
+ 
+
+html {
+    background-color: #000000;
+}
+
+body {
+    background-color: #191919;
+    color: #fff;
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 50px 10px 50px;
+    background-color: #191919;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 160px;
+    height: 33px;
+}
+
+.menu {
+
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    justify-content: center;
+    width: 403px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: "DM Sans"; /* Изменить позже на  DM Sans */
+    line-height: 27px;
+    text-align: left;
+}
+
+.menu a:hover {
+    color: #118DA8;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    padding: 70px;
+}
+
+.image {
+    width: 650px;
+    height: 873.44px;
+}
+
+.content {
+    max-width: 500px;
+}
+
+.content h2 {
+    font-size: 70px;
+    font-weight: 400;
+    font-family: "DM Sans";
+    letter-spacing: 3.2px;
+    color: #fff;
+    line-height: 88px;
+    margin-top: 300px;
+    margin-left: 60px;
+    margin-bottom: 90px;
+    width: 530px;
+}
+
+.content h2 span {
+    font-size: 75px;
+    font-weight: 400;
+}
+.content h2 span span {
+    font-size: 75px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+}
+
+.content p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 90px;
+    font-family: "DM Sans";
+}
+
+.platforms {
+    margin-top: 20px;
+    margin-left: 90px;
+    
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+    margin-right: 14px;
+}
