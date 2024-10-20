@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+button {
+    border: 0px;
+}
+
 @font-face {
     font-family: "DM Sans";
     src: url(./fonts/DM_Sans/static/DMSans-Light.ttf);
@@ -67,9 +71,16 @@ nav {
     padding: 70px;
 }
 
-.image {
+.hero .image {
+    position: relative;
     width: 650px;
     height: 873.44px;
+}
+
+.image-decor {
+    position: absolute;
+    top: -25px;
+    left: -25px
 }
 
 .content {
@@ -92,7 +103,15 @@ nav {
 .content h2 span {
     font-size: 75px;
     font-weight: 400;
+
+    position: relative;
 }
+
+.content h2 span img {
+    position: absolute;
+    left: 0;
+}
+
 .content h2 span span {
     font-size: 75px;
     font-weight: bolder;
@@ -116,4 +135,161 @@ nav {
     width: 32px;
     height: 32px;
     margin-right: 14px;
+}
+
+section.episodes {
+    display: flex;
+    flex-direction: column;
+}
+
+section.episodes .secondary-header,
+section.episodes .cards {
+    width: 1300px;
+}
+
+.secondary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    margin-bottom: 60px;
+}
+
+.secondary-header > h2 {
+    font-family: DM Sans;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.880000114440918px;
+    text-align: left;
+    align-self: start;
+}
+
+.secondary-header > button {
+    width: 178px;
+    height: 51px;
+    border-radius: 6px;
+    background: #118DA8;
+
+    color: #fff;
+
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+
+    align-self: end;
+}
+
+.cards {
+    height: 545px;
+
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    margin-bottom: 60px;
+
+    padding: 40px;
+
+    background-color: #000;
+
+    border-radius: 32px;
+}
+
+.cards > .image {
+    width: 389px;
+    height: 465px;
+}
+.cards > .image > img {
+    width: 389px;
+    height: 465px;
+}
+
+.cards > .info {
+    width: 778px;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+
+.info > .tag {
+    width: 73px;
+    height: 27px;
+    border-radius: 6px ;
+    background: #191919;
+
+    margin-top: 8px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-content: end;
+}
+
+.info > .tag > p {
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.info .episode-number {
+    font-family: DM Sans;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #118DA8;
+
+    margin-bottom: 20px;
+}
+
+.info > h2 {
+    font-family: DM Sans;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 70.4px;
+    letter-spacing: 2.56px;
+
+    margin-bottom: 25px;
+}
+
+.info > .text {
+    font-family: DM Sans;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    opacity: 70%;
+}
+
+.info > button {
+    width: 208px;
+    height: 51px;
+    background-color: #118DA8;
+    border-radius: 6px;
+
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #fff;
+
+    margin-top: auto;
+}
+
+.cards:last-child {
+    margin-bottom: 160px;
+}
+
+.circle  {
+    border-radius: 50%;
+    background-color: #118DA8;
+    width: 112px;
+    height: 112px;
+    position: relative;
+}
+
+.circle > img {
+    position: absolute;
+    top: 35px;
+    left: 20px;
 }
