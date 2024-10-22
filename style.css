@@ -121,13 +121,13 @@ nav {
 .content p {
     font-size: 15px;
     font-weight: 400;
-    margin-left: 90px;
+    margin-left: 85px;
     font-family: "DM Sans";
 }
 
 .platforms {
     margin-top: 20px;
-    margin-left: 90px;
+    margin-left: 85px;
     
 }
 
@@ -206,22 +206,20 @@ section.episodes .cards {
 }
 
 .info > .tag {
-    width: 73px;
+    width: fit-content;
     height: 27px;
     border-radius: 6px ;
     background: #191919;
     margin-top: 8px;
     margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-content: end;
-}
-
-.info > .tag > p {
     font-family: "DM Sans";
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
+    display: inline;
+    text-decoration: none;
+    padding-inline: 15px;  
+    color: #fff;
 }
 
 .info .episode-number {
@@ -240,6 +238,11 @@ section.episodes .cards {
     line-height: 70.4px;
     letter-spacing: 2.56px;
     margin-bottom: 25px;
+    text-wrap: balance;
+}
+
+.cards:last-child .info > h2 {
+    font-size: 57px;
 }
 
 .info > .text {
@@ -248,6 +251,7 @@ section.episodes .cards {
     font-weight: 400;
     line-height: 33px;
     opacity: 70%;
+    width: 773px;
 }
 
 .info > button {
@@ -271,6 +275,7 @@ section.jacob {
     padding: 100px 70px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .circle  {
@@ -391,6 +396,7 @@ section.submit-form {
     font-size: 24px;
     font-weight: 400;
     line-height: 28.8px;
+    letter-spacing: 0.5px;
 }
 
 .submit-form > .form > form > button {
@@ -399,6 +405,12 @@ section.submit-form {
     border-radius: 6px;
     background-color:#118DA8;
     color: rgba(255,255,255,0.7);
+
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: 0.5px;
 }
 
 .reviews {
@@ -406,6 +418,7 @@ section.submit-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-content: stretch;
     gap: 15px;
     justify-content: space-between;
     margin-top: 200px;
@@ -415,10 +428,17 @@ section.submit-form {
 
 .reviews > .review {
     width: 423px;
-    height: 321px;
+    /* height: 321px; */
     background-color: #000;
     border-radius: 32px;
     padding: 50px;
+}
+
+.reviews > .review > img {
+    width: 18px;
+    height: 18px;
+    margin-left: 1px;
+    margin-top: 2px;
 }
 
 .reviews > .review > .comment {
@@ -426,7 +446,7 @@ section.submit-form {
     font-size: 36px;
     font-weight: 400;
     line-height: 43.2px;
-    margin-top: 20px;
+    margin-top: 18px;
     width: 320px;
 }
 
@@ -439,13 +459,66 @@ section.submit-form {
     margin-top: 20px;
 }
 
-footer > .platforms {
-    margin-top: 20px;
-    margin-left: 90px;
+footer {
+    margin-top: 200px;
+    width: 1300px;
+    margin-inline: auto;
+
+    display: flex;
+    gap: 16px;
+    padding-bottom: 120px;
+}
+
+footer > .logo2 {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+}
+
+footer .logo2 img.logoImage {
+    width: 224px;
+    margin-bottom: 20px;
+}
+
+footer .logo2 .icons {
+    display: flex;
+    gap: 10px;
+}
+
+footer .logo2 .icons img{
+    width: 24px;
+
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer .link-list1 {
+    width: 179px;
+}
+
+footer .link-list1 li,
+footer .link-list2 li {
+    font-family: "DM Sans";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer > .platforms2 {
+    margin-left: 10px;
     
 }
 
-footer > .platforms > a > .icons {
+footer > .platforms2 > a > .icons {
     width: 32px;
     height: 32px;
     margin-right: 14px;
